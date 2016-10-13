@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.duy.ad14_lesson11_contenerlayout.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="70dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="70dp" />
+                <TextView
+                    android:id="@+id/txtName"
+                    android:text="Nguyễn Văn A"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imgAvatar"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:text="nva@gmail.com"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imgAvatar"
+                    android:layout_below="@+id/txtName"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtSDT"
+                    android:text="18001001"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imgAvatar"
+                    android:layout_below="@+id/txtEmail"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TableLayout
+
+            android:stretchColumns="1,2"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="44dp"
+                    android:text="ô1"
+                    android:background="#0f4dd2"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="44dp"
+                    android:layout_span="2"
+                    android:text="ô2"
+                    android:background="#ae9a54"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="44dp"
+                    android:text="ô3"
+                    android:background="#d1d412"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="44dp"
+                    android:text="ô4"
+                    android:background="#e90b4e"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="44dp"
+                    android:text="ô5"
+                    android:background="#a77f7f"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:text="Button1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <Button
+            android:text="Button2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+</ScrollView>
